@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <style type="text/css">
+        .container {
+            margin-top: 25px;
+        }
+
+        .col-md-12 {
+            padding: 10px;
+        }
+
+        h2 {
+            padding-bottom: 30px;
+        }
+        .btn-primary {
+            margin-top: 20px;
+        }
+
+        #res {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3" id="box">
+                <div class="col-md-12">
+                    <h2 class="text-center">Welcome.. !</h2>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                First Name:
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" id="FirstName" class="form-control" required="required" value="" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                Last Name:
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" id="LastName" class="form-control" required="required" value="" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                Salary:
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" id="Salary" class="form-control" required="required" value="" />
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-primary" onclick="add_user()">Add Employee</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12" id="res">
+                    <h4 class="text-center">Employee has been added.. !</h4>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                First Name:
+                            </div>
+                            <div class="col-md-6">
+                                <span type="text" id="FirstName_res"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                Last Name:
+                            </div>
+                            <div class="col-md-6">
+                                <span type="text" id="LastName_res"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                Salary:
+                            </div>
+                            <div class="col-md-6">
+                                <span type="text" id="Salary_res"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
